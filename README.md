@@ -1,4 +1,5 @@
 # monash-bootcamp-week12
+![Travis CI](https://travis-ci.com/TriNguyenClassroom/monash-bootcamp-week12.svg?token=YzhZ7rCWaqxQctqZBP4Z&branch=master)
 Employee Tracker
 
 # To Start
@@ -6,3 +7,8 @@ Employee Tracker
 
 # To Test
 - run `npm test`
+
+# Travis CI
+- Login to [here](https://travis-ci.com/) using Github
+- Whenever you commit and push to github, you should see your test being run automatically. 
+- You can then look for the cool tag that I have in this readme
