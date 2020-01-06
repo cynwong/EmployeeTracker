@@ -1,5 +1,6 @@
 # monash-bootcamp-week12
-![Travis CI](https://travis-ci.com/TriNguyenClassroom/monash-bootcamp-week12.svg?token=YzhZ7rCWaqxQctqZBP4Z&branch=master)
+[![Build Status](https://travis-ci.com/TriNguyenClassroom/monash-bootcamp-week12.svg?token=YzhZ7rCWaqxQctqZBP4Z&branch=master)](https://travis-ci.com/TriNguyenClassroom/monash-bootcamp-week12)
+
 Employee Tracker
 
 # To Start
