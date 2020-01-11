@@ -1,0 +1,45 @@
+
+<div class="table-container is-fullwidth">
+    <section>
+        <p>Sort By:</p>
+        <button id="btnSortByID" class="button">ID</button>
+        <button id="btnSortByDepartment" class="button">Department</button>
+        <button id="btnSortByManager" class="button">Manager</button>
+    </section>
+    <table class="table is-fullwidth is-striped is-narrowed is-hoverable">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Title</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Manager</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Title</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Manager</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            {{#each employees}}
+                <tr>
+                    {{#with this}}
+                        <td>{{firstname}}</td>
+                        <td>{{lastname}}</td>
+                        <td>{{title}}</td>
+                        <td>{{department}}</td>
+                        <td>{{salary}}</td>
+                        <td>{{manager}}</td>
+                    {{/with}}
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
