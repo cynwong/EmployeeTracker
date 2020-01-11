@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <title>Employee Tracker</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="hero is-dark">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        ABC
+                    </h1>
+                    <h2 class="subtitle">
+                        Employee Tracker
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <aside class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="#">Employees</a>
+                    <ul>
+                        <li><a href="">Add employee</a></li>
+                        <li><a href="">Remove employee</a></li>
+                        <li><a href="">Update employee's role</a></li>
+                        <li><a href="">Update employee's manager</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Roles</a>
+                    <ul>
+                        <li><a href="">Add role</a></li>
+                        <li><a href="">Remove role</a></li>
+                        <li><a href="">Rename role</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Departments</a>
+                    <ul>
+                        <li><a href="">Add department</a></li>
+                        <li><a href="">Remove department</a></li>
+                        <li><a href="">Rename department</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            {{{ body }}}
+        </main>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
