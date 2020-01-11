@@ -2,11 +2,11 @@
 
 
 -- insert roles --
-INSERT INTO roles (title, default_salary) VALUE ("Sales Lead", 100000);
-INSERT INTO roles (title, default_salary) VALUE ("Salesperson", 80000);
-INSERT INTO roles (title, default_salary) VALUE ("Lead Engineer", 150000);
-INSERT INTO roles (title, default_salary) VALUE ("Software Engineer", 120000);
-INSERT INTO roles (title, default_salary) VALUE ("Accountant", 125000);
-INSERT INTO roles (title, default_salary) VALUE ("Legal Team Lead", 250000);
-INSERT INTO roles (title, default_salary) VALUE ("Lawyer", 190000);
-INSERT INTO roles (title, default_salary) VALUE ("Software Engineer", 150000);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Sales Lead", 100000,1);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Salesperson", 80000,1);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Lead Engineer", 150000, 2);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Software Engineer", 120000,2);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Accountant", 125000,3);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Legal Team Lead", 250000,4);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Lawyer", 190000,4);
+INSERT INTO roles (title, default_salary, department_id) VALUE ("Software Engineer", 150000,2);
