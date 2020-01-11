@@ -1,2 +1,2 @@
 node_modules
-config/db_config.env
+config/db/db_config.env
