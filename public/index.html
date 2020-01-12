@@ -6,63 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <title>Employee Tracker</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="hero is-dark">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">
-                        ABC
-                    </h1>
-                    <h2 class="subtitle">
-                        Employee Tracker
-                    </h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-5">
+            <a class="navbar-brand text-warning" href="#">Employee Tracker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="employees">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="roles">Roles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="departments">Departments</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
-        </header>
-        <aside class="menu">
-            <ul class="menu-list">
-                <li>
-                    <a href="employees">Employees</a>
-                    <ul>
-                        <li><a href="add_employee">Add employee</a></li>
-                        <li><a href="remove_employee">Remove employee</a></li>
-                        <li><a href="update_employee_role">Update employee's role</a></li>
-                        <li><a href="update_employee_manager">Update employee's manager</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="roles">Roles</a>
-                    <ul>
-                        <li><a href="add_roles">Add role</a></li>
-                        <li><a href="remove_role">Remove role</a></li>
-                        <li><a href="rename_role">Rename role</a></li>
-                        <li><a href="move_department">Move department</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="departments">Departments</a>
-                    <ul>
-                        <li><a href="add_department">Add department</a></li>
-                        <li><a href="remove_department">Remove department</a></li>
-                        <li><a href="rename_department">Rename department</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
+        </div>
+
         <main>
-            
+            <div id="btn_template" class="buttons_container">
+                <button class="edit-employee btn">Edit</button>
+                <button class="delete-employee btn ">Delete</button>
+            </div>
+            <!-- Employee Table View -->
+            <div id="employee_table_container" class="table-container is-fullwidth">
+                <h2 class="d-block p-2 mt-2 bg-secondary text-white">Employees</h2>
+                <button id="btn_add_employee" class="btn btn-primary m-2">Add New Employee</button>
+                <table id="employee_table" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Title</th>
+                            <th>Department</th>
+                            <th>Salary</th>
+                            <th>Manager</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tfoot class="thead-dark">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Title</th>
+                            <th>Department</th>
+                            <th>Salary</th>
+                            <th>Manager</th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <!-- Role Table View -->
+            <div id="roles_table_container" class="table-container is-fullwidth">
+                <h2 class="d-block p-2 mt-2 bg-secondary text-white">Roles</h2>
+                <table class="table">
+                    <thead  class="thead-dark">
+                        <tr>
+                            <th>title</th>
+                            <th>Department</th>
+                            <th>Default Salary</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tfoot  class="thead-dark">
+                        <tr>
+                            <th>title</th>
+                            <th>Department</th>
+                            <th>Default Salary</th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <!-- Department List View -->
+            <div id="departments_list_container" class="table-container is-fullwidth">
+                <h2 class="d-block p-2 mt-2 bg-secondary text-white">Departments</h2>
+                <ul></ul>
+            </div>
+
+
         </main>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/employees.js"></script>
 </body>
 
 </html>
