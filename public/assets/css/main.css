@@ -17,3 +17,7 @@ main>*{
 .buttons_container{
     display:inline-block;
 }
+
+#employee_form{
+    display:none;
+}
