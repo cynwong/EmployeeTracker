@@ -10,6 +10,10 @@ main>*{
     display:none;
 }
 
-#employee_row_template, #role_row_template, #department_row_template{
+#btn_template{
     display:none;
+}
+
+.buttons_container{
+    display:inline-block;
 }
