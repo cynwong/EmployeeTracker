@@ -2,7 +2,7 @@
 
 ## Description
 
-An application used for Human Resource Management to keep track of employees' information.
+An application used for Human Resource Management to keep track of employees' information. [Visit site](https://employee-tracker-cw.herokuapp.com)
 
 ## Instruction 
 
