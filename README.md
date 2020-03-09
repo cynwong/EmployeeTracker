@@ -1,15 +1,51 @@
-# monash-bootcamp-week12
-[![Build Status](https://travis-ci.com/TriNguyenClassroom/monash-bootcamp-week12.svg?token=YzhZ7rCWaqxQctqZBP4Z&branch=master)](https://travis-ci.com/TriNguyenClassroom/monash-bootcamp-week12)
+# Employee Tracker
 
-Employee Tracker
+## Description
 
-# To Start
-- run `npm install`
+An application used for Human Resource Management to keep track of employees' information.
 
-# To Test
-- run `npm test`
+## Instruction 
 
-# Travis CI
-- Login to [here](https://travis-ci.com/) using Github
-- Whenever you commit and push to github, you should see your test being run automatically. 
-- You can then look for the cool tag that I have in this readme
+### Installation
+
+    * Run config/db/*.sql file in MySQL workbench.
+    * Run following command under the application folderpath in the terminal/commandline application.
+    ```sh
+        npm install
+    ``` 
+    * Rename db_config_sample.env to db_config.env. Make change to db_config.env to reflect the database setting.
+
+### Run application
+
+```sh
+    npm start
+``` 
+
+##### Command to run development mode
+
+```sh
+    npm run dev
+``` 
+
+## User Story
+
+> As a business owner
+> I want to be able to view and manage the departments, roles, and employees in my company
+> So that I can organize and plan my business
+
+## Technologies used
+    * Node.js
+    * Express.js
+    * MySQL
+    * ORM
+    * JavaScript
+    * HTML
+    * BOOTSTRAP CSS
+
+
+## Future development
+
+    1. install script to set up db_config.env and create db. 
+    2. Get Employees by Title/ Manager/ Department
+    3. Get Roles by Department
+   
