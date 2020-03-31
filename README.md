@@ -9,7 +9,7 @@ An application used for Human Resource Management to keep track of employees' in
 ### Installation
 
     * Run config/db/*.sql file in MySQL workbench.
-    * Run following command under the application folderpath in the terminal/commandline application.
+    * Run the following command under the application folder path in the terminal/command-line application.
     ```sh
         npm install
     ``` 
@@ -19,13 +19,13 @@ An application used for Human Resource Management to keep track of employees' in
 
 ```sh
     npm start
-``` 
+```
 
-##### Command to run development mode
+#### Command to run development mode
 
 ```sh
     npm run dev
-``` 
+```
 
 ## User Story
 
@@ -34,6 +34,7 @@ An application used for Human Resource Management to keep track of employees' in
 > So that I can organize and plan my business
 
 ## Technologies used
+
     * Node.js
     * Express.js
     * MySQL
@@ -42,10 +43,8 @@ An application used for Human Resource Management to keep track of employees' in
     * HTML
     * BOOTSTRAP CSS
 
-
 ## Future development
 
     1. install script to set up db_config.env and create db. 
     2. Get Employees by Title/ Manager/ Department
     3. Get Roles by Department
-   
